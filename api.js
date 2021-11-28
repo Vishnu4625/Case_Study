@@ -19,9 +19,16 @@ function setTable(obj){
     let table ="<thead><tr><th>Title</th><th>Completed</th><th>Status</th></tr></thead>";
     for(let i=0;i<item.length;i++)
     {        
+        if(item[i].completed == true){   
             table+="<tr>";
-            table+="<td>"+item[i].title+"</td><td>"+item[i].completed+"</td><td><input type=checkbox></td>";
+            table+="<td>"+item[i].title+"</td><td>"+item[i].completed+"</td><td><input type=checkbox checked disabled></td>";
             table+="</tr>";
+        }
+        else{
+            table+="<tr>";
+            table+="<td>"+item[i].title+"</td><td>"+item[i].completed+"</td><td><input type=checkbox onChange=changeFun()></td>";
+            table+="</tr>";
+        }
     }
     table+="</table>";
     document.getElementById("gList").innerHTML=table;
