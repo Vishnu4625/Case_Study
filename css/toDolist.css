@@ -1,0 +1,31 @@
+.head{
+    text-align: center;
+    align-items: center;
+}
+
+#gList th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: large;
+    border: 1px solid black;
+}
+#gList{
+    position: absolute;
+    top:6em;
+    left:17em;
+    width: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1.5px solid black;
+    text-align: center;
+    border-radius: 15px;
+}
+#gList td{
+    border: 1px solid black;
+    padding: 12px;
+}
+#gList tr:hover{
+background-color: red;
+
+}
