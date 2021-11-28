@@ -21,7 +21,7 @@ function setTable(obj){
     {        
         if(item[i].completed == true){   
             table+="<tr>";
-            table+="<td>"+item[i].title+"</td><td>"+item[i].completed+"</td><td><input type=checkbox 'checked' 'disabled'></td>";
+            table+="<td>"+item[i].title+"</td><td>"+item[i].completed+"</td><td><input type=checkbox checked disabled'></td>";
             table+="</tr>";
         }
         else{
